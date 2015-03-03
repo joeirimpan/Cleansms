@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical"
+    tools:context=".Conversation" >
+
+    <ListView
+        android:id="@+id/ConvListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" />
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0" 
+        android:background="#60E3E2DD">
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/newmessagecontent"
+                android:layout_height="50dp"
+                android:layout_weight="50"
+                android:hint="Enter message here"
+                android:singleLine="false" />
+
+            <ImageButton
+                android:id="@+id/sendmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:src="@drawable/ic_action_send" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

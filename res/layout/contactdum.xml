@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:padding="3dp"
+      android:id="@+id/rlayout">
+    <ImageView 
+        android:id="@+id/iv_photo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="8dp"
+        android:contentDescription="@+string/contactphoto"/>
+    
+    <TextView 
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_toRightOf="@id/iv_photo"
+        android:layout_marginTop="7dp"  
+        android:layout_alignTop="@id/iv_photo"      
+          />
+    <TextView 
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#aab3b4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_alignTop="@id/tv_name"     
+          />
+     <ImageView 
+        android:id="@+id/iv_read"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_toLeftOf="@id/tv_date"
+        android:layout_marginTop="12dp" 
+        android:paddingRight="5dp"
+        android:src="@drawable/read_bub"
+        android:contentDescription="@+string/readbubble"/>
+   <TextView 
+        android:id="@+id/tv_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1" 
+        android:textSize="16sp"
+        android:maxLength="100"
+        android:ellipsize="end"
+        android:textColor="#aab3b4"
+        android:layout_toRightOf="@id/iv_photo" 
+        android:layout_below="@id/tv_name" 
+        android:layout_marginTop="5dp"   
+            
+          />
+   <!--tv_num is used for storing the number belonging to a thread-->
+   <!--using getadd fucntion is not returning the number in every devices-->
+     <TextView 
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_photo"
+        android:layout_below="@id/tv_body"  
+          />
+    
+     
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp" >
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:weightSum="100">
+    
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="top"
+        android:layout_weight="30" />
+        
+       <Button android:layout_height="wrap_content" 
+                android:id="@+id/cntc" 
+                android:text="Contacts" 
+                android:layout_width="40dp"
+                android:layout_weight="70"
+                android:background="#c1e2ff"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp" />
+    
+<EditText android:id="@+id/newmsgbody"
+                android:layout_height="150dp" 
+                android:singleLine="false"
+                android:gravity="top"
+                android:layout_width="250dp"
+                android:layout_alignParentTop="true"
+                android:hint="Enter message here"
+                  />
+
+            <Button android:layout_height="wrap_content" 
+                android:id="@+id/press" 
+                android:text="Send" 
+                android:layout_width="wrap_content"
+                android:background="#d3bdff"/>
+</LinearLayout>
